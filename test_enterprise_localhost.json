@@ -1,0 +1,9 @@
+{
+  "port": 80,
+  "proxy": {
+    "rules": {
+      "/service": "http://localhost:7101/service"
+    },
+    "default": "http://localhost:7102"
+  }
+}
