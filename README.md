@@ -14,6 +14,21 @@ to the `test-enterprise-service-node-js` project running on port 7101,
 and all other requests to the `test-enteprise-website-html5` project
 running on port 7102.
 
+# Remember Me
+
+The login form in the test enterprise website includes a "Remember Me"
+checkbox.
+
+When you log in with "Remember Me" unchecked, you will always
+get a QR code.
+
+The first time you log in with "Remember Me" checked, you will get
+a QR code. When you log out and then log in again each time after that,
+the checkbox will already be checked for you and you will get the push
+notification. This is a reflection of the fact that the "Remember Me"
+setting can only be enabled by an authenticated user, so it doesn't take
+effect until you complete the next login.
+
 # Local testing workaround
 
 When you are testing locally, you will notice that login requests are
